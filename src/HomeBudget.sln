@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Web", "HomeBudget.Web\HomeBudget.Web.csproj", "{52A5BD24-31ED-41A5-870D-344E6DE3AD9E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Domain", "HomeBudget.Domain\HomeBudget.Domain.csproj", "{C23BDD1E-ECC0-4CB7-A22C-28F2A8CDB5F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Mapping", "HomeBudget.Mapping\HomeBudget.Mapping.csproj", "{A8AB8CE6-83F6-4A68-B22D-498551C49276}"
@@ -26,10 +24,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52A5BD24-31ED-41A5-870D-344E6DE3AD9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52A5BD24-31ED-41A5-870D-344E6DE3AD9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52A5BD24-31ED-41A5-870D-344E6DE3AD9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52A5BD24-31ED-41A5-870D-344E6DE3AD9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C23BDD1E-ECC0-4CB7-A22C-28F2A8CDB5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C23BDD1E-ECC0-4CB7-A22C-28F2A8CDB5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23BDD1E-ECC0-4CB7-A22C-28F2A8CDB5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
