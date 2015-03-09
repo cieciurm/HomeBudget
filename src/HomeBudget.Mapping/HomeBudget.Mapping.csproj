@@ -48,6 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction\IContext.cs" />
+    <Compile Include="Abstraction\IRepository.cs" />
+    <Compile Include="Abstraction\IUnitOfWork.cs" />
+    <Compile Include="HomeBudgetContext.cs" />
+    <Compile Include="Migrations\201503092047290_IntialMigration.cs" />
+    <Compile Include="Migrations\201503092047290_IntialMigration.Designer.cs">
+      <DependentUpon>201503092047290_IntialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503092051524_AddedForeignKeysToEntities.cs" />
+    <Compile Include="Migrations\201503092051524_AddedForeignKeysToEntities.Designer.cs">
+      <DependentUpon>201503092051524_AddedForeignKeysToEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +72,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201503092047290_IntialMigration.resx">
+      <DependentUpon>201503092047290_IntialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503092051524_AddedForeignKeysToEntities.resx">
+      <DependentUpon>201503092051524_AddedForeignKeysToEntities.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
