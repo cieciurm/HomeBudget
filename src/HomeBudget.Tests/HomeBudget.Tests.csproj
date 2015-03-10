@@ -67,6 +67,10 @@
       <Project>{a8ab8ce6-83f6-4a68-b22d-498551c49276}</Project>
       <Name>HomeBudget.Mapping</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HomeBudget.Web\HomeBudget.Web.csproj">
+      <Project>{bb64bfdc-544a-4789-bff9-8fee36b0057c}</Project>
+      <Name>HomeBudget.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
