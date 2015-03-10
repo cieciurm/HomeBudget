@@ -54,6 +54,7 @@
     <Compile Include="Abstraction\IRepository.cs" />
     <Compile Include="Abstraction\IUnitOfWork.cs" />
     <Compile Include="HomeBudgetContext.cs" />
+    <Compile Include="Implementation\Repository.cs" />
     <Compile Include="Migrations\201503092047290_IntialMigration.cs" />
     <Compile Include="Migrations\201503092047290_IntialMigration.Designer.cs">
       <DependentUpon>201503092047290_IntialMigration.cs</DependentUpon>

@@ -1,4 +1,7 @@
 using System;
+using HomeBudget.Mapping;
+using HomeBudget.Mapping.Abstraction;
+using HomeBudget.Mapping.Implementation;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 
@@ -32,11 +35,16 @@ namespace HomeBudget.Web.App_Start
         /// change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
         public static void RegisterTypes(IUnityContainer container)
         {
-            // NOTE: To load from web.config uncomment the line below. Make sure to add a Microsoft.Practices.Unity.Configuration to the using statements.
-            // container.LoadConfiguration();
+            RegisterMappingConfiguration(container);
+        }
 
-            // TODO: Register your types here
-            // container.RegisterType<IProductRepository, ProductRepository>();
+        private static void RegisterMappingConfiguration(IUnityContainer container)
+        {
+            container.RegisterType<HomeBudgetContext>(new PerRequestLifetimeManager());
+            container.RegisterType<IUnitOfWork, HomeBudgetContext>();
+            container.RegisterType<IContext, HomeBudgetContext>();
+
+            container.RegisterType(typeof(IRepository<>), typeof(Repository<>));
         }
     }
 }
