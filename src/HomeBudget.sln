@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FEDEE2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Web", "HomeBudget.Web\HomeBudget.Web.csproj", "{BB64BFDC-544A-4789-BFF9-8FEE36B0057C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Contracts", "HomeBudget.Contracts\HomeBudget.Contracts.csproj", "{12090C9D-3EEA-45FD-972E-648F70A0693D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{BB64BFDC-544A-4789-BFF9-8FEE36B0057C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB64BFDC-544A-4789-BFF9-8FEE36B0057C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB64BFDC-544A-4789-BFF9-8FEE36B0057C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12090C9D-3EEA-45FD-972E-648F70A0693D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12090C9D-3EEA-45FD-972E-648F70A0693D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12090C9D-3EEA-45FD-972E-648F70A0693D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12090C9D-3EEA-45FD-972E-648F70A0693D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
