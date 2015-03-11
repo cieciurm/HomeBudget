@@ -39,12 +39,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoriesService.cs" />
+    <Compile Include="Converters\CategoryConverter.cs" />
+    <Compile Include="Converters\IViewModelConverter.cs" />
+    <Compile Include="Extensions\BaseEntityExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HomeBudget.Contracts\HomeBudget.Contracts.csproj">
+      <Project>{12090C9D-3EEA-45FD-972E-648F70A0693D}</Project>
+      <Name>HomeBudget.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HomeBudget.Domain\HomeBudget.Domain.csproj">
       <Project>{c23bdd1e-ecc0-4cb7-a22c-28f2a8cdb5f8}</Project>
       <Name>HomeBudget.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeBudget.Mapping\HomeBudget.Mapping.csproj">
+      <Project>{A8AB8CE6-83F6-4A68-B22D-498551C49276}</Project>
+      <Name>HomeBudget.Mapping</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
