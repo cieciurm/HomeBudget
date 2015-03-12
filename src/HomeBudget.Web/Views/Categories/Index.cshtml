@@ -1,0 +1,46 @@
+﻿@using GridMvc.Html
+@using HomeBudget.Contracts
+@using HomeBudget.Contracts.Resources
+@using HomeBudget.Web.Constants
+@model IEnumerable<CategoryViewModel>
+
+@{
+    ViewBag.Title = "Kategorie";
+}
+
+<h1>Kategorie</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        @Html.Grid(Model).Columns(columns =>
+        {
+            columns.Add(x => x.Name)
+                .Titled(CategoryViewModelResources.Name)
+                .SetWidth(LayoutConstants.ThirtyPercents)
+                .Sortable(true);
+            columns.Add(x => x.Description)
+                .SetWidth(LayoutConstants.ThirtyPercents)
+                .Titled(CategoryViewModelResources.Description)
+                .Sortable(true);
+            columns.Add(x => x.CreationDate)
+                .Titled(CategoryViewModelResources.CreationDate)
+                .Sortable(true);
+            columns.Add()
+                .Titled(CategoryViewModelResources.Edition)
+                .Sanitized(false)
+                .Encoded(false)
+                .RenderValueAs(x => Html.ActionLink("Edytuj", "Edit", new { id = x.Id }));
+            columns.Add()
+                .Titled(CategoryViewModelResources.Deletion)
+                .Sanitized(false)
+                .Encoded(false)
+                .RenderValueAs(x => Html.ActionLink("Usuń", "Delete", new { id = x.Id }));
+        })
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        @Html.ActionLink("Dodaj kategorię", "Add", null, new { @class = "btn btn-success" })
+    </div>
+</div>

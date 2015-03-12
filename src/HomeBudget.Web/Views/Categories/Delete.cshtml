@@ -1,0 +1,31 @@
+﻿@using HomeBudget.Contracts
+@model CategoryViewModel
+
+@{
+    ViewBag.Title = "Usuwanie kategorii";
+}
+
+<h2>Usuwanie kategorii</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        @Html.HiddenFor(x => x.Id)
+        @Html.LabelFor(x => x.Name)
+        @Html.DisplayFor(x => x.Name)
+        
+        <p>Czy na pewno chcesz usunąć kategorię?</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                <input type="submit" class="btn btn-danger" value="Usuń" />
+            </div>
+            <div class="form-group">
+                @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-default" })
+            </div>
+        }
+    </div>
+</div>
