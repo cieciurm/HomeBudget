@@ -1,4 +1,4 @@
-﻿namespace HomeBudget.Web.Constants
+﻿namespace HomeBudget.Web.Configuration
 {
     public static class LayoutConstants
     {
