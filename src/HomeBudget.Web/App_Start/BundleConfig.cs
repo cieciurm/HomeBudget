@@ -19,9 +19,8 @@ namespace HomeBudget.Web
                         "~/Scripts/angular.js",
                         "~/Scripts/angular-resource.js"));
 
-
-            bundles.Add(new ScriptBundle("~/bundles/slickgrid")
-                .IncludeDirectory("~/Scripts/SlickGrid", "*.js", true));
+            bundles.Add(new ScriptBundle("~/bundles/nggrid")
+                .Include("~/Scripts/ng-grid.js"));
 
 
 
@@ -36,7 +35,8 @@ namespace HomeBudget.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/ng-grid.css"));
         }
     }
 }
