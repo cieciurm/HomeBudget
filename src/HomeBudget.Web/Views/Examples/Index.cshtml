@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Examples";
+}
+
+<div ng-app="examplesApp" ng-controller="examplesController">
+    <h2>{{title}}</h2>
+    <br />
+    <button ng-click="logic.getCamelCaseObject()" class="btn btn-default">Sprawdzenie serializacji dla Json.NET</button>
+    <br />
+    <br />
+    <button ng-click="logic.checkModelBinding()" class="btn btn-default">Sprawdzenie mapowania obiektu dla Json.NET</button>
+    <br />
+</div>
+
+@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/App/Examples/examples.js"></script>
+}

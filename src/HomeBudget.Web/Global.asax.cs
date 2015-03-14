@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using HomeBudget.Web.ModelBinding;
 
 namespace HomeBudget.Web
 {
@@ -19,6 +20,11 @@ namespace HomeBudget.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             UnityConfig.RegisterComponents();
+
+            //remove default JsonValueProvider from ASP.NET MVC
+            ValueProviderFactories.Factories.Remove(ValueProviderFactories.Factories
+                                .OfType<JsonValueProviderFactory>().FirstOrDefault());
+            ValueProviderFactories.Factories.Add(new JsonNetValueProviderFactory());
         }
     }
 }

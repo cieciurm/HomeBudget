@@ -10,6 +10,11 @@ namespace HomeBudget.Web.Controllers
 {
     public class ExamplesController : BaseController
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         [HttpGet]
         public JsonResult TestCamelcase()
         {
@@ -21,6 +26,15 @@ namespace HomeBudget.Web.Controllers
             };
 
             return JsonNetResult(model);
+        }
+
+        [HttpPost]
+        public JsonResult TestCamelcaseBinding(CamelCaseTestModel model)
+        {
+            if(model.AnArray == null || model.AnotherIntegerValue == 0)
+                throw new Exception("Json.NET model binding error");
+
+            return JsonNetResult("success");
         }
     }
 }

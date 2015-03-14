@@ -145,7 +145,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Configuration\Const.cs" />
-    <Compile Include="Constants\LayoutConstants.cs" />
+    <Compile Include="Configuration\LayoutConstants.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ExamplesController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
@@ -153,6 +153,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelBinding\JsonNetValueProviderFactory.cs" />
     <Compile Include="Models\ExampleModels\CamelCaseTestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\JsonNetResult.cs" />
@@ -203,6 +204,7 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\App\Examples\examples.js" />
     <Content Include="Scripts\App\Home\home-app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1021,6 +1023,7 @@
     <Content Include="Views\Shared\_Grid.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Examples\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
