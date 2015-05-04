@@ -36,5 +36,12 @@ namespace HomeBudget.Web.Controllers
 
             return JsonNetResult("success");
         }
+
+        [HttpGet]
+        public ActionResult Grid()
+        {
+            return View();
+        }
+            
     }
 }

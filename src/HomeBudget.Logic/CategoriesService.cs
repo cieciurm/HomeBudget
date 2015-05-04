@@ -53,7 +53,6 @@ namespace HomeBudget.Logic
                 return;
 
             category.Name = model.Name;
-            category.Description = model.Description;
 
             _categoriesRepository.Edit(category);
         }

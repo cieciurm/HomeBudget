@@ -1,8 +1,10 @@
 ﻿namespace HomeBudget.Domain
 {
-    public class Category : BaseEntity
+    public class Category : BaseEntityWithId
     {
         public string Name { get; set; }
-        public string Description { get; set; }
+
+        public Category RootCategory { get; set; }
+        public int RootCategoryId { get; set; }
     }
 }

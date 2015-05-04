@@ -15,7 +15,6 @@ namespace HomeBudget.Logic.Converters
                 Id = model.Id,
                 CreationDate = model.CreationDate,
                 Name = model.Name,
-                Description = model.Description
             };
         }
 
@@ -27,7 +26,6 @@ namespace HomeBudget.Logic.Converters
             return new Category
             {
                 Name = viewModel.Name,
-                Description = viewModel.Description
             };
         }
     }

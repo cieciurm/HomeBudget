@@ -1,6 +1,6 @@
 ﻿namespace HomeBudget.Domain
 {
-    public class Tag : BaseEntity
+    public class Tag : BaseEntityWithId
     {
         public string Name { get; set; }
     }

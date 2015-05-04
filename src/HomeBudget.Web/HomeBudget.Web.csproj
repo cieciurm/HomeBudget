@@ -193,6 +193,7 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\App\Examples\grid.js" />
     <Content Include="Scripts\App\Examples\examples.js" />
     <Content Include="Scripts\App\Home\home-app.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -996,6 +997,7 @@
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Delete.cshtml" />
     <Content Include="Views\Examples\Index.cshtml" />
+    <Content Include="Views\Examples\Grid.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

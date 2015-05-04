@@ -56,13 +56,13 @@
     <Compile Include="Abstraction\IUnitOfWork.cs" />
     <Compile Include="HomeBudgetContext.cs" />
     <Compile Include="Implementation\Repository.cs" />
-    <Compile Include="Migrations\201503092047290_IntialMigration.cs" />
-    <Compile Include="Migrations\201503092047290_IntialMigration.Designer.cs">
-      <DependentUpon>201503092047290_IntialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201505042042459_InitialMigration.cs" />
+    <Compile Include="Migrations\201505042042459_InitialMigration.Designer.cs">
+      <DependentUpon>201505042042459_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201503092051524_AddedForeignKeysToEntities.cs" />
-    <Compile Include="Migrations\201503092051524_AddedForeignKeysToEntities.Designer.cs">
-      <DependentUpon>201503092051524_AddedForeignKeysToEntities.cs</DependentUpon>
+    <Compile Include="Migrations\201505042046365_AddAccountToExpense.cs" />
+    <Compile Include="Migrations\201505042046365_AddAccountToExpense.Designer.cs">
+      <DependentUpon>201505042046365_AddAccountToExpense.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,11 +78,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503092047290_IntialMigration.resx">
-      <DependentUpon>201503092047290_IntialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505042042459_InitialMigration.resx">
+      <DependentUpon>201505042042459_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201503092051524_AddedForeignKeysToEntities.resx">
-      <DependentUpon>201503092051524_AddedForeignKeysToEntities.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505042046365_AddAccountToExpense.resx">
+      <DependentUpon>201505042046365_AddAccountToExpense.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

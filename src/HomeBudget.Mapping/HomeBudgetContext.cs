@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using HomeBudget.Domain;
 using HomeBudget.Mapping.Abstraction;
 
@@ -10,7 +11,7 @@ namespace HomeBudget.Mapping
         public DbSet<Category> Categories { get; set; }
         public DbSet<Expense> Expenses { get; set; }
         public DbSet<Tag> Tags { get; set; }
-        public DbSet<Budget> Budgets { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
         public HomeBudgetContext()
             : base("HomeBudgetConnection")
