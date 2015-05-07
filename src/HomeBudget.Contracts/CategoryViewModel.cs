@@ -3,7 +3,7 @@ using HomeBudget.Contracts.Resources;
 
 namespace HomeBudget.Contracts
 {
-    public class CategoryViewModel : BaseEntityViewModel
+    public class CategoryViewModel : BaseViewModel
     {
         [Required(ErrorMessageResourceType = typeof(CategoryViewModelResources), ErrorMessageResourceName = "NameCannotBeEmpty")]
         [Display(Name = "Name", ResourceType = typeof(CategoryViewModelResources))]

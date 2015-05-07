@@ -40,9 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoriesService.cs" />
-    <Compile Include="Converters\CategoryConverter.cs" />
     <Compile Include="Converters\IViewModelConverter.cs" />
+    <Compile Include="Expenses\ExpensesRootViewModelFactory.cs" />
     <Compile Include="Extensions\BaseEntityExtensions.cs" />
+    <Compile Include="IGridBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +60,7 @@
       <Name>HomeBudget.Mapping</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,19 +8,32 @@ using HomeBudget.Contracts.Helpers;
 
 namespace HomeBudget.Contracts.Grids
 {
-    public class GridViewModelBase<T>
+    public interface IGridViewModelBase<T>
     {
-        public GridViewModelBase(string gridId)
+        IGridViewModelBase<T> AddColumn(Expression<Func<T, object>> field, string displayName);
+        string GridHtmlId { get; }
+        List<ColumnDefinition> ColumnDefs { get; set; }
+        List<T> Data { get; set; }
+        IGridViewModelBase<T> BuildGrid();
+    }
+
+    public abstract class GridViewModelBase<T> : IGridViewModelBase<T>
+    {
+        protected GridViewModelBase(string gridId)
         {
             GridHtmlId = gridId;
             ColumnDefs = new List<ColumnDefinition>();
+            // ReSharper disable once DoNotCallOverridableMethodsInConstructor
+            BuildGrid();
         }
+
+        public abstract IGridViewModelBase<T> BuildGrid();
 
         public string GridHtmlId { get; private set; }
         public List<ColumnDefinition> ColumnDefs { get; set; }
         public List<T> Data { get; set; }
 
-        public GridViewModelBase<T> AddColumn(Expression<Func<T, object>> field, string displayName)
+        public IGridViewModelBase<T> AddColumn(Expression<Func<T, object>> field, string displayName)
         {
             ColumnDefs.Add(new ColumnDefinition(PropertyHelper.GetFullPropertyName(field), displayName));
             return this;

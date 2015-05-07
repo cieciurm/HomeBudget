@@ -196,6 +196,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\App\Examples\grid.js" />
     <Content Include="Scripts\App\Examples\examples.js" />
+    <Content Include="Scripts\App\Expenses\expenses.js" />
     <Content Include="Scripts\App\Home\home-app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

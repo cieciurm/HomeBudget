@@ -2,5 +2,16 @@
     ViewBag.Title = "Expenses";
 }
 
-<h2>Index</h2>
+<h2>Expenses</h2>
 
+<div ng-app="expensesApp">
+    <div ng-controller="expensesGridController">
+        <div class="gridStyle" ng-grid="gridOptions">
+
+        </div>
+    </div>
+</div>
+@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/App/Expenses/expenses.js"></script>
+}

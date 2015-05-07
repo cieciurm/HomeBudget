@@ -2,7 +2,12 @@
 
 namespace HomeBudget.Contracts
 {
-    public class BaseViewModel
+    public interface IBaseGridItemViewModel
+    {
+        int Id { get; set; }
+    }
+
+    public class BaseViewModel : IBaseGridItemViewModel
     {
         public int Id { get; set; }
     }
