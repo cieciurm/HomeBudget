@@ -11,7 +11,7 @@ namespace HomeBudget.Domain
         public DateTime CreationDate { get; set; }
         public bool IsDeleted { get; set; }
 
-        public BaseEntity()
+        protected BaseEntity()
         {
             CreationDate = DateTime.Now;
         }
